@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meta Account</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #1c1e21;
+}
+
+.page {
+    width: 100%;
+    max-width: 430px;
+    margin: auto;
+    padding: 18px 20px 25px;
+}
+
+/* Tombol kembali */
+.back {
+    font-size: 38px;
+    font-weight: 300;
+    color: #555;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+
+/* Logo Meta */
+.meta {
+    font-size: 21px;
+    font-weight: bold;
+    color: #1877f2;
+    margin-bottom: 22px;
+}
+
+/* Judul */
+h1 {
+    font-size: 26px;
+    line-height: 1.18;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+/* Deskripsi */
+.description {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Label */
+label {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input dan select */
+input,
+select {
+    width: 100%;
+    height: 58px;
+    border: 1px solid #d0d0d0;
+    border-radius: 14px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    outline: none;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+input:focus,
+select:focus {
+    border-color: #1877f2;
+}
+
+/* Nama */
+.name {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.name input {
+    width: 50%;
+}
+
+/* Tanggal lahir */
+.birth {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 21px;
+}
+
+.birth select {
+    flex: 1;
+    padding: 0 18px;
+}
+
+/* Gender */
+.gender {
+    margin-bottom: 20px;
+}
+
+/* Nomor/email */
+.contact {
+    margin-bottom: 7px;
+}
+
+/* Teks kecil */
+.info {
+    font-size: 13px;
+    line-height: 1.35;
+    color: #555;
+    margin: 8px 0 22px;
+}
+
+.link {
+    color: #1769aa;
+    font-weight: bold;
+}
+
+/* Password */
+.password {
+    margin-bottom: 0;
+}
+
+/* Privacy */
+.policy {
+    font-size: 13px;
+    line-height: 1.38;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 28px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit {
+    background: #087cf0;
+    color: white;
+    margin-top: 25px;
+}
+
+.login {
+    background: #f1f2f4;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Tampilan HP */
+@media (max-width: 360px) {
+
+    .page {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    input,
+    select {
+        height: 53px;
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="back">‹</div>
+
+    <div class="meta">∞ Meta</div>
+
+    <h1>
+        Get started on Facebook with a Meta account
+    </h1>
+
+    <p class="description">
+        A Meta Account lets you access multiple Meta technologies,
+        such as Facebook, easily and securely.
+    </p>
+
+
+    <!-- NAME -->
+    <label>Name</label>
+
+    <div class="name">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Surname">
+    </div>
+
+
+    <!-- DATE OF BIRTH -->
+    <label>Date of birth ⓘ</label>
+
+    <div class="birth">
+
+        <select>
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <select>
+            <option>Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+        </select>
+
+        <select>
+            <option>Year</option>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+        </select>
+
+    </div>
+
+
+    <!-- GENDER -->
+    <label>Gender ⓘ</label>
+
+    <div class="gender">
+        <select>
+            <option>Select your gender</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+
+    <!-- EMAIL -->
+    <label>Mobile number or email address</label>
+
+    <input
+        class="contact"
+        type="text"
+        placeholder="Mobile number or email address"
+    >
+
+    <p class="info">
+        You may receive notifications from us.
+        <span class="link">
+            Learn why we ask for your contact information
+        </span>
+    </p>
+
+
+    <!-- PASSWORD -->
+    <label>Password</label>
+
+    <input
+        class="password"
+        type="password"
+        placeholder="Password"
+    >
+
+
+    <!-- PRIVACY -->
+    <p class="policy">
+
+        People who use our service may have uploaded your contact
+        information to Facebook.
+        <span class="link">Learn more.</span>
+
+        <br><br>
+
+        By tapping Submit, you agree to create an account and to
+        Facebook's
+        <span class="link">
+            Terms, Privacy Policy and Cookies Policy.
+        </span>
+
+        <br><br>
+
+        The Privacy Policy describes the ways we can use the
+        information we collect when you create an account.
+        For example, we use this information to provide,
+        personalise and improve our products, including ads.
+
+    </p>
+
+
+    <!-- BUTTON -->
+    <button class="submit">
+        Submit
+    </button>
+
+    <button class="login">
+        I already have an account
+    </button>
+
+</div>
+
+</body>
+</html>
